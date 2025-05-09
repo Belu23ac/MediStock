@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.logo-container {
+  width: 100%; /* will fill the parent's width */
+  box-sizing: border-box; /* include padding & border in the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+} 
+
+.input {
+  background-color: #f69ecd; /* light pink */
+  border: 2px solid #A10217; /* red */
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #ff6666; /* lighter red */
+  box-shadow: 0 0 8px #A10217;
+}
+
+.input::placeholder {
+  color: #A10217; /* soft red */
+  font-style: italic;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.centerContainer {
+  text-align: center;
+  margin-top: 50px; 
+}

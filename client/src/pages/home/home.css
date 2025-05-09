@@ -1,0 +1,63 @@
+.home-logo {
+  width: 100%;
+}
+.home-navlink:hover {
+    color: #f69ecd;
+    border-color: #A10217;
+    background-color: #A10217;
+}
+
+.home-scan-link:hover {
+    color: #f69ecd;
+    border-color: #A10217;
+    background-color: #A10217;
+}
+
+.home-scan-link:hover svg {
+    fill: #f69ecd;
+}
+
+.home-scan-link:hover .scan-text {
+    color: #f69ecd;
+}
+.navlink-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.home-navlink {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #A10217;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-navlink:first-child {
+  margin-right: 10px;
+}
+
+.home-navlink:last-child {
+  margin-left: 10px;
+}
+
+.home-scan-link {
+  display: block;
+  border: 2px solid #A10217;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+
+.scan-icon {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.scan-text {
+  margin-top: 0;
+  margin-bottom: 5px;
+}

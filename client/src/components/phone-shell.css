@@ -1,0 +1,25 @@
+/* phone-shell.css */
+.phone-frame {
+  --w: 390; /* logical‑pixel width  (iPhone 14) */
+  --h: 844; /* logical‑pixel height */
+
+  aspect-ratio: var(--w) / var(--h); /* lock the ratio               */
+  height: min(97vh, calc(100vw * var(--h) / var(--w)));
+  margin: 0 auto;
+  border: 12px solid #000;
+  border-radius: 40px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: hidden;
+}
+
+.phone-frame .screen-content {
+  background-color: #f69ecd;
+  flex: 1;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 30px 20px;
+}

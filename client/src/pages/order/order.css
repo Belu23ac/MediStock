@@ -1,0 +1,92 @@
+.transparent-button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #A10217;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.transparent-button:hover {
+    border-color: lightgray;
+}
+
+.transparent-button.delete {
+    color: red;
+}
+
+.transparent-button:focus,
+.transparent-button:active {
+    outline: none;
+    border-color: transparent;
+}
+
+.input-order {
+    background-color: #f69ecd; /* light pink */
+    border: 2px solid #A10217; /* red */
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    width: 4ch;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cancel-button {
+    flex: 1;
+    color: red;
+    
+}
+
+.cancel-button:hover,
+.order-button:hover {
+    background-color: #A10217; 
+    color: red; 
+    border-color:#A10217;
+}
+
+.order-button {
+    flex: 3;
+    color: #A10217;
+}
+
+.cancel-button,
+.order-button {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid #A10217; 
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.select-order {
+    flex: 4;
+    background-color: #f69ecd;
+    border: 2px solid #A10217;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1rem;
+    color: #A10217;
+    outline: none;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+  accent-color: #f69ecd;
+  appearance: none;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #A10217;
+  appearance: auto;
+  cursor: pointer;
+}

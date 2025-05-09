@@ -1,0 +1,30 @@
+.navbar {
+  height: 5%; /* Fixed height */
+  padding: 10px;
+  background-color: #f681bf;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /* Space out items evenly */
+}
+
+.nav-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  fill: #420606;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  fill: #a10217;
+}
+
+.icon {
+  height: 40%;
+  width: 40%;
+}
+
+.nav-link :hover{
+  fill: red;
+}
