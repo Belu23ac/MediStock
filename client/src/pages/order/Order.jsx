@@ -32,7 +32,6 @@ const Order = () => {
   useEffect(() => {
     const scannedProduct = localStorage.getItem("scannedProduct");
     if (scannedProduct) {
-      console.log("Scanned product:", scannedProduct);
       // Here we add "Plaster" to orderItems.
       setOrderItems((prev) => {
         if (prev.some((item) => item.name === "Plaster")) {
