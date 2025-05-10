@@ -1,5 +1,5 @@
-/server/src/db/orders.db
-/server/src/db/users.db
+/server/db/orders.db
+/server/db/users.db
 /client/node_modules
 /server/node_modules
 /node_modules
