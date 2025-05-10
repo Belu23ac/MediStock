@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet, useNavigate, useOutlet } from "react-router-dom";
-import "./Order.css";
+import "./order.css";
 
 const Order = () => {
   const navigate = useNavigate();

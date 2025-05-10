@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PhoneShell from "./components/PhoneShell";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoutes";
 import Home from "./pages/home/Home";
 import ActiveOrders from "./pages/home/ActiveOrders";
