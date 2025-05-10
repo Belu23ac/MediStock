@@ -19,7 +19,6 @@ export async function insertUser({ username, password }) {
 }
 
 export async function loginUser(user) {
-  console.log("loginUser", user);
   try {
     const dbUser = await db.get(
       "SELECT * FROM users WHERE username = ?",
@@ -27,7 +26,6 @@ export async function loginUser(user) {
     );
     return dbUser;
   } catch (err) {
-    console.log("Error fetching user:", err);
     throw err; // Re-throw errors
   }
 }

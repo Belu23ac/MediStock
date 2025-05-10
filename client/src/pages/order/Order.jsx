@@ -125,7 +125,6 @@ const Order = () => {
       const userId = localStorage.getItem("userid");
       // Create payload including userId, orderItems, and emergencyOrder
       const payload = { userId, orderItems, isEmergency: emergencyOrder };
-      console.log("Submitting order:", payload);
 
       const response = await fetch("/api/orders/add", {
         method: "POST",

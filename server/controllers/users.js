@@ -3,11 +3,9 @@ import { comparePassword } from "../utils/password.js";
 import { insertUser } from "../model/userModel.js";
 
 export async function loginUser(req, res, next) {
-  console.log("loginUser", req.body);
   try {
     const { username, password } = req.body; // JSON body parsed by express.json()
     if (!username || !password) {
-      console.log("Bad input", req.body);
       return res.status(400).json({ message: "Bad input" });
     }
 
@@ -17,10 +15,8 @@ export async function loginUser(req, res, next) {
     const isValid = await comparePassword(password, dbUser.password);
     if (!isValid) return res.status(401).json({ message: "Wrong credentials" });
 
-    console.log("User found", dbUser);
     return res.status(200).json({ id: dbUser.id, username: dbUser.username });
   } catch (err) {
-    console.log("Error in loginUser", err);
     next(err); // global error handler → 500
   }
 }

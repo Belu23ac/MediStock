@@ -23,7 +23,6 @@ export default function Login() {
       });
 
       if (res.status === 401) {
-        console.log("Wrong credentials", res);
         throw new Error("Wrong credentials");
       }
 
