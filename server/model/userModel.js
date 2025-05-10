@@ -1,18 +1,6 @@
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
+import { connectToUsersDatabase } from "../db/db.js";
 
-export const db = await open({
-  filename: '../server/src/db/users.db',
-  driver: sqlite3.Database
-});
-
-db.exec(`
-  CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    username TEXT NOT NULL UNIQUE,
-    password INTEGER NOT NULL
-  );
-`);
+export const db = await connectToUsersDatabase();
 
 export async function insertUser({ username, password }) {
   try {

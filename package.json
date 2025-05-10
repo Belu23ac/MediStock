@@ -1,22 +1,16 @@
 {
-  "name": "medistock",
-  "type": "module",
-  "workspaces": ["client", "server"],
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"pnpm --filter client start\" \"pnpm --filter server start\"",
-    "migrate": "node server/scripts/migrate.js",
-    "seed": "node server/scripts/seed.js",
-    "dev": "concurrently -k \"pnpm --filter server dev\" \"pnpm --filter client dev\""
-  },
-  "devDependencies": {
-    "concurrently": "^9.0.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.10.0"
+    "name": "medistock",
+    "private": true,
+    "version": "1.0.0",
+    "workspaces": [
+        "client",
+        "server"
+    ],
+    "scripts": {
+        "install-all": "npm install",
+        "start:client": "npm run dev --workspace=client",
+        "start:server": "npm run start --workspace=server",
+        "build:client": "npm run build --workspace=client",
+        "build:server": "npm run build --workspace=server"
+    }
 }
