@@ -8,7 +8,7 @@ const OrderReceipt = () => {
     const fetchOrder = async () => {
       try {
         const orderId = localStorage.getItem("orderId");
-        console.log(orderId);
+        localStorage.removeItem("orderId");
 
         const response = await fetch(`/api/orders/${orderId}`, {
           method: "get",
@@ -18,7 +18,6 @@ const OrderReceipt = () => {
           throw new Error("Failed to fetch order");
         }
         const order = await response.json();
-        console.log("order", order);
         if (!order) {
           throw new Error("Order not found");
         }
@@ -98,7 +97,7 @@ const OrderReceipt = () => {
         </div>
         <div style={boxStyle}>
           <span>OrderID</span>
-          <span>#{receipt.id}</span>
+          <span>#{receipt.orderId}</span>
         </div>
       </div>
     </div>
