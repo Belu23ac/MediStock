@@ -4,7 +4,7 @@ import { open } from 'sqlite';
 export async function connectToUsersDatabase() {
     // Adjust the filename path to your project structure
     const db = await open({
-        filename: './db/users.db', // for example; ensure the "src/db" folder exists
+        filename: './users.db', // for example; ensure the "src/db" folder exists
         driver: sqlite3.Database
     });
     
@@ -23,7 +23,7 @@ export async function connectToUsersDatabase() {
 export async function connectToOrdersDatabase() {
     // Adjust the filename path to your project structure
     const db = await open({
-        filename: './db/orders.db', // for example; ensure the "src/db" folder exists
+        filename: './orders.db', // for example; ensure the "src/db" folder exists
         driver: sqlite3.Database
     });
     
