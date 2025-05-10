@@ -10,20 +10,25 @@ const OrderReceipt = () => {
         const orderId = localStorage.getItem("orderId");
         localStorage.removeItem("orderId");
 
-        const response = await fetch(`/api/orders/${orderId}`, {
-          method: "get",
-          headers: { "Content-Type": "application/json" },
-        });
-        if (!response.ok) {
-          throw new Error("Failed to fetch order");
+        if (!orderId) {
+          throw new Error("Order ID not found");
+        } else {
+          const response = await fetch(`/api/orders/${orderId}`, {
+            method: "get",
+            headers: { "Content-Type": "application/json" },
+          });
+          if (!response.ok) {
+            throw new Error("Failed to fetch order");
+          }
+          const order = await response.json();
+          if (!order) {
+            throw new Error("Order not found");
+          }
+          setReceipt(order);
         }
-        const order = await response.json();
-        if (!order) {
-          throw new Error("Order not found");
-        }
-        setReceipt(order);
       } catch (error) {
-        console.error(error.message);
+        console.error("Error fetching order:", error);
+        setReceipt(null);
       }
     };
 
