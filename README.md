@@ -8,12 +8,17 @@ Follow the steps below to set up the project:
 
 ### Installation
 
-1. Navigate to the `MediStock` folder:
+1. Download the `MediStock` project:
+    ```bash
+    git clone https://github.com/Belu23ac/MediStock.git
+    ```
+
+2. Navigate to the `MediStock` folder:
     ```bash
     cd MediStock
     ```
 
-2. Install dependencies using `npm`:
+3. Install dependencies using `npm`:
     ```bash
     npm install
     ```
