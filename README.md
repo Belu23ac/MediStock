@@ -6,29 +6,23 @@ MediStock is a project designed to manage medical stock efficiently.
 
 Follow the steps below to set up the project:
 
-### Prerequisites
-
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/)
-- [pnpm](https://pnpm.io/)
-
 ### Installation
 
-1. Navigate to the `client` folder:
+1. Navigate to the `Medistock` folder:
     ```bash
-    cd client
+    cd Medistock
     ```
 
-2. Install dependencies using `pnpm`:
+2. Install dependencies using `npm`:
     ```bash
-    pnpm install
+    npm install
     ```
 
 ### Running the Application
 
 After installing dependencies, you can start the application by running:
 ```bash
-pnpm start
+npm run dev --workspace=client
 ```
 
 ## License
