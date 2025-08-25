@@ -8,9 +8,9 @@ Follow the steps below to set up the project:
 
 ### Installation
 
-1. Navigate to the `Medistock` folder:
+1. Navigate to the `MediStock` folder:
     ```bash
-    cd Medistock
+    cd MediStock
     ```
 
 2. Install dependencies using `npm`:
