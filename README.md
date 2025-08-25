@@ -25,6 +25,11 @@ After installing dependencies, you can start the application by running:
 npm run dev --workspace=client
 ```
 
+Then go to http://localhost:5173 on your browser:
+```bash
+http://localhost:5173
+```
+
 ## License
 
 This project is licensed under the MIT License.
